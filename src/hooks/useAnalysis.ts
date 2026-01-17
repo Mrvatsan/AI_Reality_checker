@@ -10,6 +10,12 @@ export interface AnalysisResult {
     saferVersion: string;
 }
 
+/**
+ * Custom hook that manages the analysis lifecycle.
+ * Simulates a network request with a delay and returns deterministic mock data.
+ * 
+ * @returns {object} The analysis state (isAnalyzing, result) and trigger function (analyzeClaim).
+ */
 export function useAnalysis() {
     const [isAnalyzing, setIsAnalyzing] = useState(false);
     const [result, setResult] = useState<AnalysisResult | null>(null);
