@@ -1,3 +1,7 @@
+/**
+ * AI Reality Check - Main Application Entry Point
+ * Manages the core layout and high-level state for the claim analysis flow.
+ */
 import { useState } from 'react';
 import { Hero } from './components/Hero';
 import { ClaimInput } from './components/ClaimInput';
